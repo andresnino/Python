@@ -8,3 +8,5 @@ el cargador.
 También cómo obtener de los primeros 30 vídeos más populares, más antiguos y más recientes, el link, título, duración, vistas y hace cuanto se público y por último como guardar esos datos en un archivo de texto(txt).
 
 3 - Dos formas diferentes de comprobar la conexión a internet.
+
+4 - Realizar consulta a una base de datos y obtener los resultados en un diccionario en SQLite.
