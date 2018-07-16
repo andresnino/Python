@@ -10,3 +10,5 @@ También cómo obtener de los primeros 30 vídeos más populares, más antiguos 
 3 - Dos formas diferentes de comprobar la conexión a internet.
 
 4 - Realizar consulta a una base de datos y obtener los resultados en un diccionario en SQLite.
+
+5. Generar reporte en PDF con ReportLab.
