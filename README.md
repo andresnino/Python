@@ -11,4 +11,4 @@ También cómo obtener de los primeros 30 vídeos más populares, más antiguos 
 
 4 - Realizar consulta a una base de datos y obtener los resultados en un diccionario en SQLite.
 
-5. Generar reporte en PDF con ReportLab.
+5 - Generar reporte en PDF con ReportLab.
