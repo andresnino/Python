@@ -3,7 +3,7 @@
 # Nombre:       reportePDF.py
 # Autor:        Miguel Andres Garcia Niño
 # Creado:       15 de Julio 2018
-# Modificado:   15 de Julio 2018
+# Modificado:   20 de Julio 2018
 # Copyright:    (c) 2018 by Miguel Andres Garcia Niño, 2018
 # License:      Apache License 2.0
 # ----------------------------------------------------------------------------
@@ -102,10 +102,12 @@ class reportePDF(object):
         alineacionTitulo = ParagraphStyle(name="centrar", alignment=TA_CENTER, fontSize=13,
                                           leading=10, textColor=purple,
                                           parent=self.estilos["Heading1"])
+        
+        self.ancho, self.alto = letter
 
         convertirDatos = self.convertirDatos()
-        
-        tabla = Table(convertirDatos, hAlign="LEFT")
+    
+        tabla = Table(convertirDatos, colWidths=(self.ancho-100)/len(self.cabecera), hAlign="CENTER")
         tabla.setStyle(TableStyle([
             ("BACKGROUND", (0, 0),(-1, 0), purple),
             ("ALIGN", (0, 0),(0, -1), "LEFT"),
@@ -119,7 +121,7 @@ class reportePDF(object):
         historia.append(Spacer(1, 0.16 * inch))
         historia.append(tabla)
 
-        archivoPDF = SimpleDocTemplate(self.nombrePDF, rightMargin=50, pagesize=letter,
+        archivoPDF = SimpleDocTemplate(self.nombrePDF, leftMargin=50, rightMargin=50, pagesize=letter,
                                        title="Reporte PDF", author="Andres Niño")
         
         try:
