@@ -14,3 +14,5 @@ También cómo obtener de los primeros 30 vídeos más populares, más antiguos 
 5 - Generar reporte en PDF con ReportLab.
 
 6 - Detección de anagramas.
+
+7 - Generar reporte en EXCEL (xlsx) con Python y OpenPyXL.
